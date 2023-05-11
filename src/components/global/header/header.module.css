@@ -26,3 +26,17 @@
   display: flex;
   cursor: pointer;
 }
+
+@media (max-width: 550px) {
+  .mainContainer {
+    padding: 0 10px;
+    flex-direction: column;
+  }
+  .rightContainer {
+    justify-content: space-between;
+    width: 100%;
+  }
+  .pageNameCont {
+    padding-right: 0px;
+  }
+}
