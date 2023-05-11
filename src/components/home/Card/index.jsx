@@ -23,25 +23,27 @@ const customStyles = {
   },
 };
 
-const Index = () => {
+const Index = ({ movie }) => {
   return (
     <Card sx={customStyles.card}>
       <CardMedia
         sx={{ height: 200, borderRadius: "16px" }}
-        image="/arch.png"
+        image={movie.image}
         title="green iguana"
       />
       <CardContent sx={customStyles.cardContent}>
         <Box>
-          <Typography variant="body1" sx={{ color: colors.BODY_LIGHT }}>Jungle View</Typography>
+          <Typography variant="body1" sx={{ color: colors.BODY_LIGHT }}>
+            {movie.name}
+          </Typography>
           <Typography variant="h6" sx={{ color: colors.BODY_LIGHT }}>
-            Newway Town
+            {movie.location}
           </Typography>
           <Typography variant="h4" sx={{ color: colors.TEXT_HEADING_DARK }}>
-            $3,500,000
+            {`$${movie.price}`}
           </Typography>
           <Typography variant="body2" sx={{ color: colors.NEAR_WHITE }}>
-            By YX Properties
+            {` By ${movie.developer}`}
           </Typography>
         </Box>
         <Box>
@@ -50,6 +52,16 @@ const Index = () => {
       </CardContent>
     </Card>
   );
+};
+
+Index.defaultProps = {
+  movie: {
+    name: "",
+    location: "",
+    image: "",
+    price: "",
+    developer: "",
+  },
 };
 
 export default Index;
