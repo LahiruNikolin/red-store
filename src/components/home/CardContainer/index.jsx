@@ -25,7 +25,7 @@ const CardContainer = () => {
 
   return (
     <Box sx={{ flexGrow: 1, paddingTop: "60px" }}>
-      <Grid container rowSpacing={6} columnSpacing={2}>
+      <Grid container rowSpacing={6} columnSpacing={2} justifyContent="center">
         {movies.map((movie) => (
           <Grid key={movie.id} item xs={12} md={6} lg={4}>
             <Card movie={movie} />
