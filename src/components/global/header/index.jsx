@@ -3,14 +3,17 @@ import { color } from "@mui/system";
 import React from "react";
 import styles from "./header.module.css";
 import colors from "@/config/colors";
+import { useRouter } from "next/router";
 
 const Header = () => {
+  const router = useRouter();
+  const handleRedirect = () => router.push("./");
   return (
     <div
       className={styles.mainContainer}
       style={{ backgroundColor: colors.ALMOST_WHITE }}
     >
-      <div className={styles.leftContainer}>
+      <div className={styles.leftContainer} onClick={handleRedirect}>
         <Typography variant="h2">Metaprop</Typography>
       </div>
       <div className={styles.rightContainer}>

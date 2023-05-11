@@ -12,7 +12,8 @@ function useHouses() {
     )
       .then((response) => response.json())
       .then((data) => {
-        setMovies(data);
+        let id = 0;
+        setMovies(data.map((item) => ({ ...item, id: ++id })));
         setLoading(false);
       })
       .catch((e) => setError(e));

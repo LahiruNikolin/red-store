@@ -8,6 +8,7 @@
 }
 
 .leftContainer {
+  cursor: pointer;
 }
 
 .rightContainer {
@@ -18,8 +19,10 @@
 
 .pageNameCont {
   padding-right: 15px;
+  cursor: pointer;
 }
 
 .avatarArea {
   display: flex;
+  cursor: pointer;
 }
