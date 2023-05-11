@@ -1,6 +1,6 @@
 This is web application built using react and next.js
 
-TO run the project execute the below commands in terminal
+To run the project execute the below commands in terminal
 
 1) git clone https://github.com/LahiruNikolin/red-store.git
 2) cd red-store
@@ -9,7 +9,7 @@ TO run the project execute the below commands in terminal
   
 Data Fetching
   
-For this process I have used the native fetcher API
+For this process, I have determined that the native fetcher API is suffiecient for the job
 
 Project Structure
   
