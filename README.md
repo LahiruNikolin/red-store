@@ -2,7 +2,7 @@ This is web application built using react and next.js
 
 TO run the project follow below steps
 
-1) git clone <repository-url>
+1) git clone https://github.com/LahiruNikolin/red-store.git
 2) cd red-store
 3) npm install or yarn install
 3) npm run dev or yarn dev
